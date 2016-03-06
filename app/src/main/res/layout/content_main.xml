@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.calcapp.philipp.calcapp.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tv_Name"
+        android:id="@+id/tv_Name"
+        android:textSize="30sp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:layout_width="75sp"
+        android:layout_height="75sp"
+        android:text="Calc"
+        android:id="@+id/bt_Calc"
+        android:layout_below="@+id/bt_Six"
+        android:layout_alignParentEnd="true"/>
+
+    <Button
+        android:layout_width="75sp"
+        android:layout_height="75sp"
+        android:text="Clear"
+        android:id="@+id/bt_Clear"
+        android:layout_below="@+id/tv_Name"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="162dp"/>
+
+    <TextView
+        android:layout_width="100sp"
+        android:layout_height="140sp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/tv_Display"
+        android:id="@+id/tv_Display"
+        android:layout_below="@+id/tv_Name"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="23dp"
+        android:layout_alignEnd="@+id/bt_Clear"
+        android:textAlignment="textEnd"
+        android:textIsSelectable="false"
+        android:textSize="40sp"/>
+
+    <Button
+        android:layout_width="75sp"
+        android:layout_height="75sp"
+        android:text="9"
+        android:id="@+id/bt_Nine"
+        android:layout_below="@+id/bt_Clear"
+        android:layout_toEndOf="@+id/bt_Eight"/>
+
+    <Button
+        android:layout_width="75sp"
+        android:layout_height="75sp"
+        android:text="8"
+        android:id="@+id/bt_Eight"
+        android:layout_alignTop="@+id/bt_Nine"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:layout_width="75sp"
+        android:layout_height="75sp"
+        android:text="7"
+        android:id="@+id/bt_Seven"
+        android:layout_alignTop="@+id/bt_Eight"
+        android:layout_toStartOf="@+id/bt_Eight"/>
+
+    <Button
+        android:layout_width="75sp"
+        android:layout_height="75sp"
+        android:text="4"
+        android:id="@+id/bt_Four"
+        android:layout_toStartOf="@+id/bt_Eight"
+        android:layout_below="@+id/bt_Seven"/>
+
+    <Button
+        android:layout_width="75sp"
+        android:layout_height="75sp"
+        android:text="5"
+        android:id="@+id/bt_Five"
+        android:layout_alignTop="@+id/bt_Four"
+        android:layout_alignStart="@+id/bt_Eight"/>
+
+    <Button
+        android:layout_width="75sp"
+        android:layout_height="75sp"
+        android:text="0"
+        android:id="@+id/bt_Zero"
+        android:layout_below="@+id/bt_One"
+        android:layout_toStartOf="@+id/bt_Two"/>
+
+    <Button
+        android:layout_width="75sp"
+        android:layout_height="75sp"
+        android:text="1"
+        android:id="@+id/bt_One"
+        android:layout_below="@+id/bt_Four"
+        android:layout_toStartOf="@+id/bt_Five"/>
+
+    <Button
+        android:layout_width="75sp"
+        android:layout_height="75sp"
+        android:text="2"
+        android:id="@+id/bt_Two"
+        android:layout_below="@+id/bt_Five"
+        android:layout_alignStart="@+id/bt_Five"/>
+
+    <Button
+        android:layout_width="75sp"
+        android:layout_height="75sp"
+        android:text="6"
+        android:id="@+id/bt_Six"
+        android:layout_alignTop="@+id/bt_Five"
+        android:layout_toEndOf="@+id/bt_Five"/>
+
+    <Button
+        android:layout_width="75sp"
+        android:layout_height="75sp"
+        android:text="3"
+        android:id="@+id/bt_Three"
+        android:layout_below="@+id/bt_Five"
+        android:layout_toEndOf="@+id/bt_Five"/>
+
+    <Button
+        android:layout_width="75sp"
+        android:layout_height="75sp"
+        android:text="+"
+        android:id="@+id/bt_Plus"
+        android:layout_below="@+id/bt_Clear"
+        android:layout_alignEnd="@+id/bt_Clear"/>
+
+    <Button
+        android:layout_width="75sp"
+        android:layout_height="75sp"
+        android:text="-"
+        android:id="@+id/bt_Minus"
+        android:layout_above="@+id/bt_Calc"
+        android:layout_alignStart="@+id/bt_Calc"/>
+
+    <Button
+        android:layout_width="75sp"
+        android:layout_height="75sp"
+        android:text="DEG"
+        android:id="@+id/bt_DEG"
+        android:layout_below="@+id/tv_Display"
+        android:layout_toStartOf="@+id/bt_Seven"/>
+
+    <Button
+        android:layout_width="75sp"
+        android:layout_height="75sp"
+        android:text="RAD"
+        android:id="@+id/bt_RAD"
+        android:layout_below="@+id/tv_Display"
+        android:layout_toEndOf="@+id/bt_DEG"/>
+
+    <Button
+        android:layout_width="75sp"
+        android:layout_height="75sp"
+        android:text="*"
+        android:id="@+id/bt_Multiply"
+        android:layout_below="@+id/tv_Display"
+        android:layout_toEndOf="@+id/bt_Seven"/>
+
+    <Button
+        android:layout_width="75sp"
+        android:layout_height="75sp"
+        android:text="/"
+        android:id="@+id/bt_Divide"
+        android:layout_below="@+id/tv_Display"
+        android:layout_toEndOf="@+id/bt_Eight"/>
+
+    <Button
+        android:layout_width="75sp"
+        android:layout_height="75sp"
+        android:text="x²"
+        android:id="@+id/bt_Square"
+        android:layout_below="@+id/bt_DEG"
+        android:layout_toStartOf="@+id/bt_Seven"/>
+
+    <Button
+        android:layout_width="75sp"
+        android:layout_height="75sp"
+        android:text="x³"
+        android:id="@+id/bt_Cube"
+        android:layout_below="@+id/bt_Square"
+        android:layout_toStartOf="@+id/bt_Four"/>
+
+    <Button
+        android:layout_width="75sp"
+        android:layout_height="75sp"
+        android:text="x^y"
+        android:id="@+id/bt_PowerOf"
+        android:layout_below="@+id/bt_Cube"
+        android:layout_toStartOf="@+id/bt_Zero"/>
+
+</RelativeLayout>

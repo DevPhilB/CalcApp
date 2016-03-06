@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">CalcApp</string>
+    <string name="action_settings">Settings</string>
+    <string name="tv_Name">Calculator V2</string>
+    <string name="tv_Display">0</string>
+    <string name="bt_Nine">9</string>
+</resources>
